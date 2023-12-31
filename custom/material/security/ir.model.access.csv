@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_custom_material_material_type,custom_material.material_type,model_custom_material_material_type,base.group_system,1,1,1,1
+access_custom_material_supplier,custom_material.supplier,model_custom_material_supplier,base.group_system,1,1,1,1
+access_custom_material_material,custom_material.material,model_custom_material_material,base.group_system,1,1,1,1
+access_custom_material_material_type,custom_material.material_type,model_custom_material_material_type,base.group_user,1,1,1,1
+access_custom_material_supplier,custom_material.supplier,model_custom_material_supplier,base.group_user,1,1,1,1
+access_custom_material_material,custom_material.material,model_custom_material_material,base.group_user,1,1,1,1

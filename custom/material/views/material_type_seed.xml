@@ -1,0 +1,19 @@
+<odoo>
+  <data noupdate="1">
+    <record id="material_type_fabric" model="custom_material.material_type">
+      <field name="name">Fabric</field>
+      <field name="code">FB</field>
+      <field name="description">Fabrics materials</field>
+    </record>
+    <record id="material_type_jeans" model="custom_material.material_type">
+      <field name="name">Jeans</field>
+      <field name="code">JS</field>
+      <field name="description">Jeans materials</field>
+    </record>
+    <record id="material_type_cotton" model="custom_material.material_type">
+      <field name="name">Cotton</field>
+      <field name="code">CT</field>
+      <field name="description">Cotton materials</field>
+    </record>
+  </data>
+</odoo>

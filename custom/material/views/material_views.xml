@@ -1,0 +1,49 @@
+<odoo>
+  <data>
+    <record id="material_tree_view" model="ir.ui.view">
+      <field name="name">custom_material.material.tree</field>
+      <field name="model">custom_material.material</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="material_type_id"/>
+          <field name="supplier_id"/>
+          <field name="description"/>
+          <field name="buy_price"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="material_form_view" model="ir.ui.view">
+      <field name="name">custom_material.material.form</field>
+      <field name="model">custom_material.material</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+            <field name="name"/>
+            <field name="code"/>
+            <field name="material_type_id"/>
+            <field name="supplier_id"/>
+            <field name="description"/>
+            <field name="buy_price"/>
+          </group>
+        </form>
+      </field>
+    </record>
+
+    <record id="action_materials" model="ir.actions.act_window">
+      <field name="name">Materials</field>
+      <field name="res_model">custom_material.material</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+        <p class="o_view_nocontent_smiling_face">
+          Create the first Material
+        </p>
+      </field>
+    </record>
+
+    <menuitem id="menu_materials" name="Materials" action="action_materials" sequence="1"/>
+    <menuitem id="menu_materials" name="Materials" action="action_materials"/>
+  </data>
+</odoo>
